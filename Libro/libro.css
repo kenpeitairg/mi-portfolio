@@ -1,0 +1,184 @@
+/* Estilos específicos para la página de extractos del libro - Diseño para público femenino */
+
+/* Variables de color (Puedes ajustar estas si quieres otros tonos) */
+:root {
+    --primary-color-soft: #6A057F; /* Morado suave y elegante */
+    --secondary-color-gentle: #81B214; /* Verde oliva suave */
+    --accent-color-light: #F7D6E0; /* Rosa pastel muy claro */
+    --text-color-dark: #333;
+    --text-color-medium: #555;
+    --background-light: #FDFDFD; /* Blanco roto para el fondo */
+    --card-background: #FFFFFF; /* Blanco puro para las tarjetas */
+    --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra suave */
+    --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15); /* Sombra al pasar el ratón */
+    --border-radius-gentle: 12px;
+}
+
+/* Base de la sección */
+.section-padded {
+    padding: 80px 0; /* Más padding para espacio */
+    background-color: var(--background-light); /* Fondo suave */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Fuente elegante para títulos */
+    font-size: 2.8em;
+    color: var(--primary-color-soft);
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px; /* Espacio para el subrayado decorativo */
+}
+
+.section-title::after { /* Subrayado decorativo */
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent-color-light); /* Un toque de color pastel */
+    border-radius: 2px;
+}
+
+.intro-text {
+    text-align: center;
+    margin-bottom: 60px; /* Más espacio */
+    font-size: 1.25em; /* Un poco más grande */
+    color: var(--text-color-medium);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6; /* Mejor legibilidad */
+}
+
+/* Grid de extractos */
+.extractos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Tarjetas un poco más anchas */
+    gap: 35px; /* Más espacio entre tarjetas */
+    padding-bottom: 50px;
+}
+
+/* Tarjetas individuales de extracto */
+.extracto-card {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius-gentle); /* Bordes más suaves */
+    box-shadow: var(--shadow-soft); /* Sombra muy sutil */
+    padding: 30px; /* Más padding interno */
+    text-align: center;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease; /* Transición más suave */
+    border: 1px solid rgba(247, 214, 224, 0.5); /* Borde muy sutil del color pastel */
+}
+
+.extracto-card:hover {
+    transform: translateY(-12px); /* Se eleva un poco más */
+    box-shadow: var(--shadow-hover); /* Sombra más pronunciada al pasar el ratón */
+    border-color: var(--primary-color-soft); /* Borde que se acentúa */
+}
+
+.extracto-card h3 {
+    font-family: 'Poppins', sans-serif; /* Fuente más legible pero elegante */
+    color: var(--primary-color-soft);
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.6em; /* Título de capítulo más grande */
+    letter-spacing: 0.5px; /* Un poco de espaciado para mejor lectura */
+}
+
+.extracto-card p {
+    font-size: 1em; /* Texto un poco más grande */
+    color: var(--text-color-medium);
+    line-height: 1.7; /* Mayor interlineado para legibilidad */
+    margin-bottom: 25px; /* Más espacio antes del botón */
+}
+
+/* Estilo del botón "Leer Capítulo" */
+.extracto-card .btn-link {
+    display: inline-flex; /* Para alinear el icono y el texto */
+    align-items: center;
+    gap: 8px; /* Espacio entre texto e icono */
+    background-color: var(--secondary-color-gentle); /* Color suave para el botón */
+    color: var(--card-background); /* Texto blanco sobre el botón */
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px; /* Bordes redondeados para un look suave */
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.05em;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(129, 178, 20, 0.3); /* Sombra suave para el botón */
+}
+
+.extracto-card .btn-link:hover {
+    background-color: #9ecc2a; /* Tono ligeramente más claro al pasar el ratón */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(129, 178, 20, 0.4);
+}
+
+.extracto-card .btn-link .fas {
+    color: var(--card-background); /* Color del icono */
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 1024px) {
+    .section-title {
+        font-size: 2.5em;
+    }
+    .intro-text {
+        font-size: 1.15em;
+    }
+    .extractos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+    .extracto-card h3 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-padded {
+        padding: 60px 0;
+    }
+    .section-title {
+        font-size: 2.2em;
+    }
+    .intro-text {
+        font-size: 1em;
+        margin-bottom: 40px;
+    }
+    .extractos-grid {
+        grid-template-columns: 1fr; /* Una columna en tablets pequeñas y móviles */
+        gap: 20px;
+    }
+    .extracto-card {
+        padding: 25px;
+    }
+    .extracto-card h3 {
+        font-size: 1.3em;
+    }
+    .extracto-card .btn-link {
+        padding: 10px 20px;
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.8em;
+    }
+    .intro-text {
+        font-size: 0.95em;
+    }
+    .extracto-card {
+        padding: 20px;
+    }
+}
