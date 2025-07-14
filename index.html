@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>¡Explora mi Mundo!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Alejandro Matias Bilcich</a> <ul class="nav-links">
+                <li><a href="#sobre-mi" class="active">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#pasatiempos">Pasatiempos</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+ <main class="main-content">
+    <section id="sobre-mi" class="section-padded">
+        <div class="container">
+            <h2 class="section-title">Mi Historia: De la Patagonia a Ámsterdam</h2>
+            <div class="bio-grid">
+                <div class="bio-text">
+                    <p>Mi nombre es Alejandro Matias Bilcich, y mi historia comenzó en la última ciudad del continente, un rincón mágico de la Patagonia argentina. Rodeado de montañas, vientos helados y una naturaleza imponente, mi curiosidad me impulsó a explorar más allá de los límites de mi hogar.</p>
+                    <p>La fotografía, los viajes, los libros y los videojuegos han sido mis faros, y hoy te invito a un recorrido visual y narrativo de cómo estas pasiones han tejido la trama de mi vida.</p>
+                </div>
+                <div class="bio-image">
+                    <img src="assets/5 (9).jpg" alt="Tu foto personal" class="profile-pic" loading="lazy">
+                </div>
+            </div>
+            </div>
+    </section>
+</main>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3><i class="fas fa-mountain timeline-icon"></i> Un comienzo en la Patagonia</h3>
+                        <p>Mi infancia y juventud estuvieron marcadas por un paisaje brutalmente hermoso, donde el frío y el viento son parte del día a día. Desde ese lugar tan remoto, decidí mirar al mundo a través de la lente de mi cámara. La fotografía fue mi primera forma de exploración, y poco a poco me fui enamorando de contar historias visuales, ya sea en los rincones más ocultos de la Patagonia o en tierras lejanas como los mares de Croacia...</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3><i class="fas fa-shield-alt timeline-icon"></i> De militar y policía penitenciario a un nuevo camino</h3>
+                        <p>En mi país, tuve experiencias que me formaron de manera intensa: fui militar y oficial del servicio penitenciario. Pero siempre sentí que mi alma pedía algo diferente. Decidí cambiar radicalmente mi vida y, hace unos años, me mudé a Europa, buscando nuevas oportunidades y aventuras...</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3><i class="fas fa-passport timeline-icon"></i> La identidad europea</h3>
+                        <p>Me siento afortunado de haber podido realizar mis ciudadanías croata e italiana. Estos pasaportes no solo abren puertas a nuevas oportunidades, sino que también conectan con mis raíces y una rica herencia cultural.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3><i class="fas fa-coffee timeline-icon"></i> Ámsterdam: un nuevo hogar y un barista</h3>
+                        <p>Hoy en día, me encuentro en una de las ciudades más vibrantes y multiculturales de Europa: Ámsterdam. El Rijksmuseum, un lugar lleno de historia, arte y cultura, es donde paso mis días como barista, sirviendo café y absorbiendo la esencia de esta increíble ciudad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pasatiempos" class="section-padded bg-light-gradient">
+            <div class="container">
+                <h2 class="section-title">Mis Pasiones</h2>
+                <div class="passion-grid">
+                    <div class="passion-item interactive-card" data-passion="escritura">
+                        <i class="fas fa-pencil-alt passion-icon"></i>
+                        <h3>Escritura</h3>
+                        <p>Soy un escritor amateur, aunque la palabra "amateur" me queda pequeña. Tengo varios libros en progreso, y disfruto creando mundos y personajes.</p>
+                        <button class="btn-secondary view-details-btn" data-modal-target="#writingModal">Ver más</button>
+                    </div>
+                    <div class="passion-item interactive-card" data-passion="gaming">
+                        <i class="fas fa-gamepad passion-icon"></i>
+                        <h3>Gaming</h3>
+                        <p>Como gamer, siempre he buscado juegos con buenas narrativas y retos estratégicos que me sumerjan por completo.</p>
+                        <button class="btn-secondary view-details-btn" data-modal-target="#gamingModal">Ver más</button>
+                    </div>
+                    <div class="passion-item interactive-card" data-passion="fotografia">
+                        <i class="fas fa-camera-retro passion-icon"></i>
+                        <h3>Fotografía</h3>
+                        <p>Capturar momentos, paisajes y emociones a través de mi lente es una de mis grandes pasiones y una forma de expresión.</p>
+                        <button class="btn-secondary view-details-btn" data-modal-target="#photographyModal">Ver más</button>
+                    </div>
+                    <div class="passion-item interactive-card" data-passion="viajes">
+                        <i class="fas fa-plane-departure passion-icon"></i>
+                        <h3>Viajes</h3>
+                        <p>Explorar nuevas culturas, paisajes y vivir experiencias únicas alrededor del mundo alimenta mi alma aventurera.</p>
+                        <button class="btn-secondary view-details-btn" data-modal-target="#travelModal">Ver más</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+<div id="gamingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Mis Vicios</h2>
+            <p>Actualmente estoy mas enfocado a estos tipos de juegos, supervivencia, historia o estrategia etc.</p>
+        </div>
+    </div>
+    <div id="photographyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Detalles sobre mi Fotografía</h2>
+            <p>Trabajo con una Nikon D5500 y nunca se que voy a captar, solo se cuando es el momento.</p>
+        </div>
+    </div>
+    <div id="travelModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Detalles sobre Viajes</h2>
+            <p>Mis destinos los puedes ver en mi mapa interactivo mas abajo y mis próximos viajes estan por verse.</p>
+        </div>
+    </div>
+     <section id="proyectos" class="section-padded">
+    <div class="container">
+        <h2 class="section-title">Mis Proyectos Destacados</h2>
+        <div id="galeria-proyectos" class="project-grid">
+            <div class="project-card">
+                <img src="assets/programa.jpg" alt="Miniatura de Proyecto de Desarrollo Web" loading="lazy">
+                <h3>Proyecto de Desarrollo Web</h3>
+                <p>Hago de todo un poco, actualmente estoy trabajando esta pag Web, y eh utilizado las siguientes herramientas. HTML. JS. Json. Css.</p>
+                <a href="#" class="btn-link">Ver Proyecto <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="project-card">
+                <img src="assets/5 (6).jpg" alt="Miniatura de Serie Fotográfica" loading="lazy">
+                <h3>Colección de Capturas Fotográficas</h3>
+                <p>Una pequeña exploración visual de los momentos que he captado a lo largo de mi vida, todo esto hecho con una Nikon.</p>
+                <a href="galeria/galeria.html" target="_blank" class="btn-link">Ver Galería <i class="fas fa-images"></i></a>
+            </div>
+ <div class="project-card">
+    <img src="assets/libro.jpg" alt="Miniatura de Novela Biográfica" loading="lazy">
+    <h3>Manuscrito "En la cama y mas alla"</h3>
+    <p>Avance de mi novela biografica, sumérgete en el mundo de un gigoló por accidente.</p>
+   <a href="Libro/extractos.html#extractos-list" class="btn-link" target="_blank">Leer Extracto <i class="fas fa-book-open"></i></a>
+</div>
+</div>
+<div id="writingModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Detalles sobre Escritura</h2>
+        <p>En este momento estoy inmerso en la escritura de mis autobiografías, donde comparto desde mi primera experiencia sexual, pasando por un momento en el que esquivé la muerte, hasta el relato de cómo encontré el amor.</p>
+        <p>"Actualmente trabajo en una novela biogrfica, conocida como 'En la cama y mas alla', y varios relatos cortos de de mi vida personal. Mi objetivo es publicar mi primer libro en este año."</p>
+    
+        <a href="Libro/extractos.html#extractos-list" class="btn-primary" style="margin-top: 20px;">Leer un extracto</a>
+    </div>
+</div>
+        <div id="proyectos-mapa" class="map-container">
+            </div>
+    </div>
+</section>
+
+                <div id="proyectos-mapa" class="map-container">
+                    </div>
+            </div>
+        </section>
+
+                <div id="proyectos-mapa" class="map-container">
+                    <h3 class="subsection-title">Mi Viaje en el Mapa</h3>
+                    <p>Algunos de los lugares donde he vivido, trabajado o realizado proyectos personales.</p>
+                    <div id="map" style="height: 500px; width: 100%; border-radius: 15px; margin-top: 20px; box-shadow: 0 8px 25px rgba(0,0,0,0.2);"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="redes" class="section-padded bg-dark-gradient">
+<div class="container text-center">
+    <h2 class="section-title text-white">Conéctate Conmigo</h2>
+    <p class="text-white">Sígueme en mis redes sociales para estar al día de mis aventuras y proyectos.</p>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/bilcich_alejandro/" target="_blank" class="social-icon instagram" title="Instagram">
+            <img src="assets/insta.jpg" alt="Instagram">
+        </a>
+        <a href="https://www.instagram.com/mi_vertederorg/" target="_blank" class="social-icon instagram" title="Instagram">
+            <img src="assets/insta.jpg" alt="Instagram">
+        </a>
+        <a href="https://www.instagram.com/kenpeitai_rg/" target="_blank" class="social-icon instagram" title="Instagram">
+            <img src="assets/insta.jpg" alt="Instagram">
+        </a>
+        <a href="https://www.twitch.tv/kenpeitairg/" target="_blank" class="social-icon twitch" title="Twitch">
+            <img src="assets/twitch.png" alt="Twitch"> </a>
+    </div>
+</div>
+
+     <div id="twitch-embed" class="twitch-embed-container">
+    <h3 class="subsection-title text-white">Mi Canal de Twitch</h3>
+    <p class="text-white">¡Únete a la comunidad! Directos sobre gaming, desarrollo y más.</p>
+    <iframe
+        src="https://player.twitch.tv/?video=2083085767&parent=kenpeitairg.github.io&time=0s"
+        height="400"
+        width="100%"
+        allowfullscreen
+        frameborder="0">
+    </iframe>
+</div>
+    </div>
+</section>
+
+        <section id="contacto" class="section-padded">
+            <div class="container">
+                <h2 class="section-title">Hablemos</h2>
+                <p class="text-center">¿Tienes alguna pregunta, una idea o simplemente quieres saludar? ¡No dudes en contactarme!</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Tu Nombre:</label>
+                        <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Tu Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required placeholder="ejemplo@dominio.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tu Mensaje:</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary submit-btn">Enviar Mensaje <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Volver arriba"><i class="fas fa-arrow-up"></i></button>
+
+
+    
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
