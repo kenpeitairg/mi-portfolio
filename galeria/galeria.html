@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Galería de Fotografías</title>
+    <link rel="stylesheet" href="../style.css"> <link rel="stylesheet" href="galeria.css"> <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Alejandro Matias Bilcich</a> <ul class="nav-links">
+                <li><a href="../index.html#sobre-mi">Volver al Inicio</a></li>
+                <li><a href="#galeria-content">Galería</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section id="galeria-content" class="section-padded">
+            <div class="container">
+                <h2 class="section-title">Mis Fotografías</h2>
+                <p class="intro-text">Explora mi colección de momentos capturados a través de la lente. Selecciona una categoría para filtrar.</p>
+
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">Todas</button>
+                    <button class="filter-btn" data-category="artisticas">Artísticas</button>
+                    <button class="filter-btn" data-category="chalten">Chaltén</button>
+                    <button class="filter-btn" data-category="luz-uv">Luz UV</button>
+                    <button class="filter-btn" data-category="paisajes">Paisajes</button>
+                    <button class="filter-btn" data-category="perfiles">Perfiles</button>
+                </div>
+
+                <div id="photo-gallery" class="photo-grid">
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Alejandro Matias Bilcich. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="galeria.js"></script> </body>
+</html>
