@@ -1,0 +1,184 @@
+
+
+
+:root {
+    --primary-color-soft: #6A057F; 
+    --secondary-color-gentle: #81B214; 
+    --accent-color-light: #F7D6E0; 
+    --text-color-dark: #333;
+    --text-color-medium: #555;
+    --background-light: #FDFDFD; 
+    --card-background: #FFFFFF; 
+    --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.08); 
+    --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15); 
+    --border-radius-gentle: 12px;
+}
+
+
+.section-padded {
+    padding: 80px 0; 
+    background-color: var(--background-light); 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 2.8em;
+    color: var(--primary-color-soft);
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px; 
+}
+
+.section-title::after { 
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent-color-light); 
+    border-radius: 2px;
+}
+
+.intro-text {
+    text-align: center;
+    margin-bottom: 60px; 
+    font-size: 1.25em; 
+    color: var(--text-color-medium);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6; 
+}
+
+
+.extractos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 35px; 
+    padding-bottom: 50px;
+}
+
+
+.extracto-card {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius-gentle); 
+    box-shadow: var(--shadow-soft); 
+    padding: 30px; 
+    text-align: center;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease; 
+    border: 1px solid rgba(247, 214, 224, 0.5); 
+}
+
+.extracto-card:hover {
+    transform: translateY(-12px); 
+    box-shadow: var(--shadow-hover); 
+    border-color: var(--primary-color-soft); 
+}
+
+.extracto-card h3 {
+    font-family: 'Poppins', sans-serif; 
+    color: var(--primary-color-soft);
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.6em; 
+    letter-spacing: 0.5px; 
+}
+
+.extracto-card p {
+    font-size: 1em; 
+    color: var(--text-color-medium);
+    line-height: 1.7; 
+    margin-bottom: 25px; 
+}
+
+
+.extracto-card .btn-link {
+    display: inline-flex; 
+    align-items: center;
+    gap: 8px; 
+    background-color: var(--secondary-color-gentle); 
+    color: var(--card-background); 
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px; 
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.05em;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(129, 178, 20, 0.3); 
+}
+
+.extracto-card .btn-link:hover {
+    background-color: #9ecc2a; 
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(129, 178, 20, 0.4);
+}
+
+.extracto-card .btn-link .fas {
+    color: var(--card-background); 
+}
+
+
+@media (max-width: 1024px) {
+    .section-title {
+        font-size: 2.5em;
+    }
+    .intro-text {
+        font-size: 1.15em;
+    }
+    .extractos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+    .extracto-card h3 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-padded {
+        padding: 60px 0;
+    }
+    .section-title {
+        font-size: 2.2em;
+    }
+    .intro-text {
+        font-size: 1em;
+        margin-bottom: 40px;
+    }
+    .extractos-grid {
+        grid-template-columns: 1fr; /* aca tengo que tocar bien para telefono */
+        gap: 20px;
+    }
+    .extracto-card {
+        padding: 25px;
+    }
+    .extracto-card h3 {
+        font-size: 1.3em;
+    }
+    .extracto-card .btn-link {
+        padding: 10px 20px;
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.8em;
+    }
+    .intro-text {
+        font-size: 0.95em;
+    }
+    .extracto-card {
+        padding: 20px;
+    }
+}
