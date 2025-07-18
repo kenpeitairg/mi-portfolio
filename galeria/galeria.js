@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
        
             {
-            src: 'Luz-UV/3 (1).jpg', 
+            src: 'galeria/Luz-UV/3 (1).jpg'
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'Retrato Fluorescente',
