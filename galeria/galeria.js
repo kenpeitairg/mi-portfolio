@@ -724,7 +724,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: 'perfiles',
             title: 'Exhalación de lo Efímero',
             description: 'Un estudio sobre la transitoriedad.'
-        },
+        },{
             src: 'perfiles/5 (7).jpg', 
             alt: 'Puesta de sol sobre el mar',
             category: 'perfiles',
