@@ -724,13 +724,13 @@ document.addEventListener('DOMContentLoaded', () => {
             category: 'perfiles',
             title: 'Exhalación de lo Efímero',
             description: 'Un estudio sobre la transitoriedad.'
-        },{
-            src: 'perfiles/5 (7).jpg', 
-            alt: 'Puesta de sol sobre el mar',
-            category: 'perfiles',
-            title: 'Luminiscencia de la Ceniza',
-            description: 'Un primer plano de brasas o chispas en la oscuridad.'
-        },    {
+        },  {
+            src: 'perfiles/5 (7).jpg', 
+            alt: 'Puesta de sol sobre el mar',
+            category: 'perfiles',
+            title: 'El Viaje Silencioso', 
+            description: 'Una figura en un coche, absorta en sus pensamientos, bajo la luz del atardecer.'
+        },    {
             src: 'perfiles/5 (8).jpg', 
             alt: 'Puesta de sol sobre el mar',
             category: 'perfiles',
