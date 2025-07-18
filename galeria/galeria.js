@@ -359,7 +359,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         {
-            // CORREGIDO: Eliminado el '/' inicial
             src: 'Luz-UV/3 (1).jpg',
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
@@ -367,115 +366,112 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Jugando con los colores ocultos que revela la luz UV.'
         },
         {
-            // CORREGIDO: Eliminado el '/' inicial
-            src: 'Luz-UV/3 (2).jpg',
+            src: 'luz_uv/3 (2).jpg',
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'La Máscara Luminosa',
             description: 'Una composición donde líneas vibrantes de luz trazan una geografía facial.'
         },
         {
-            // CORREGIDO: Eliminado el '/' inicial
-            src: 'Luz-UV/3 (3).jpg',
+            src: 'luz_uv/3 (3).jpg',
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'Emergencia Cromática',
             description: 'La luz neón esculpe los contornos de una figura que parece surgir de la negrura.'
         },
         {
-            src: 'Luz-UV/3 (4).jpg',
+            src: 'luz_uv/3 (4).jpg',
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'Visión Espectral',
             description: 'Un rostro apenas discernible, envuelto en un aura de luz que lo hace parecer una aparición.'
         },
         {
-            src: 'Luz-UV/3 (5).jpg',
+            src: 'luz_uv/3 (5).jpg',
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'Deconstrucción de la Forma',
             description: 'Una exploración abstracta de la cabeza y el cuello, donde las bandas de luz se superponen y se interceptan, revelando y ocultando simultáneamente la anatomía subyacente.'
         },
         {
-            src: 'Luz-UV/3 (6).jpg',
+            src: 'luz_uv/3 (6).jpg',
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'El Aura Vibrante',
             description: 'Una figura en movimiento, cuya forma es definida por el resplandor de franjas de luz.'
         },
         {
-            src: 'Luz-UV/3 (7).jpg',
+            src: 'luz_uv/3 (7).jpg',
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'Retrato Descodificado',
             description: 'l rostro se convierte en un mapa de luz, con cada línea cromática funcionando como un código visual. '
         },
         {
-            src: 'Luz-UV/3 (8).jpg',
+            src: 'luz_uv/3 (8).jpg',
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: '"El Velo Luminoso',
             description: ' La luz se convierte en un velo que cubre y revela.'
         },
         {
-            src: 'Luz-UV/3 (9).jpg',
+            src: 'luz_uv/3 (9).jpg',
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'Silueta Eléctrica',
             description: 'Una silueta en la oscuridad, delineada por el contorno de la luz. '
         },
         {
-            src: 'Luz-UV/3 (10).jpg',
+            src: 'luz_uv/3 (10).jpg',
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'Espectro de Color',
             description: 'Un rostro que parece estar disolviéndose o materializándose a través de la luz.'
         },
         {
-            src: 'Luz-UV/3 (11).jpg',
+            src: 'luz_uv/3 (11).jpg',
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'Reflejos del Alma',
             description: 'La luz incide en el perfil, creando un reflejo casi líquido de colores sobre la piel.'
         },
         {
-            src: 'Luz-UV/3 (12).jpg',
+            src: 'luz_uv/3 (12).jpg',
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'La Visión del Fantasma',
             description: 'Un rostro en la penumbra, apenas visible, como si fuera una aparición espectral definida por hilos de luz verde.'
         },
         {
-            src: 'Luz-UV/3 (13).jpg',
+            src: 'luz_uv/3 (13).jpg',
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'Gestualidad Fluorescente',
             description: 'Una mano extendida, iluminada por la luz UV, que resalta los gestos y las texturas de la piel. '
         },
         {
-            src: 'Luz-UV/3 (14).jpg',
+            src: 'luz_uv/3 (14).jpg',
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'El Eco Interior',
             description: 'Una cabeza vista de perfil, con la luz revelando las estructuras internas o los pensamientos que resuenan. '
         },
         {
-            // CORREGIDO: Eliminado 'galeria/' y el doble '.jpg'
-            src: 'Luz-UV/3 (15).jpg',
+            src: 'luz_uv/3 (15).jpg',
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'Inmersión Violeta',
             description: ' Una figura sumergida en una atmósfera de luz violeta intensa, con un efecto que evoca una experiencia sensorial. '
         },
         {
-            src: 'Luz-UV/3 (16).jpg',
+            src: 'luz_uv/3 (16).jpg',
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'La Caída Luminosa',
             description: 'Una figura que parece flotar o descender en un mar de luz azul, creando una sensación de ingravidez y misterio, casi como una danza cósmica.'
         },
         {
-            src: 'Luz-UV/3 (17).jpg',
+            src: 'luz_uv/3 (17).jpg',
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'El Refugio Ultravioleta',
@@ -794,19 +790,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
  const loadPhotos = (filterCategory = 'all') => {
-        photoGallery.innerHTML = ''; // y aca limpiamos la galeria
+        photoGallery.innerHTML = '';
         let filteredPhotos = photosData;
 
         if (filterCategory !== 'all') {
             filteredPhotos = photosData.filter(photo => photo.category === filterCategory);
         }
 
-        // Aquí es donde se crean y añaden los elementos al DOM
+       
         filteredPhotos.forEach(photo => {
             const photoCard = document.createElement('div');
             photoCard.classList.add('photo-card');
-            photoCard.setAttribute('data-category', photo.category); // Asegúrate de que esto coincide con tus filtros
-
+            photoCard.setAttribute('data-category', photo.category);
             const img = document.createElement('img');
             img.src = photo.src;
             img.alt = photo.alt;
@@ -829,16 +824,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Esto inicializa la galería al cargar la página
-    loadPhotos('all'); // Carga todas las fotos por defecto
 
-    // Manejadores de eventos para los botones de filtro
+    loadPhotos('all'); 
+
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
             const category = button.getAttribute('data-filter');
             loadPhotos(category);
-
-            // Opcional: Para resaltar el botón activo
             filterButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
         });
