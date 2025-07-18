@@ -322,19 +322,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
        
             {
-            src: 'galeria/Luz-UV/3 (1).jpg'
+            src: '/Luz-UV/3 (1).jpg',
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'Retrato Fluorescente',
             description: 'Jugando con los colores ocultos que revela la luz UV.'
         },      {
-            src: 'Luz-UV/3 (2).jpg', 
+            src: '/Luz-UV/3 (2).jpg',  
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'La Máscara Luminosa',
             description: 'Una composición donde líneas vibrantes de luz trazan una geografía facial.'
         },      {
-            src: 'Luz-UV/3 (3).jpg', 
+            src: '/Luz-UV/3 (3).jpg',  
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'Emergencia Cromática',
@@ -704,97 +704,3 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Una figura en el horizonte de una carretera que se pierde en la distancia, con montañas como telón de fondo.'
         },
       
-    ];
-
-
-    // Alejandro del futuro, si ves esto recorda que aca esta la funcion para cargar y mostrar imagenes
-    const loadPhotos = (filterCategory = 'all') => {
-        photoGallery.innerHTML = ''; // y aca limpiamos la galeria
-        let filteredPhotos = photosData;
-
-        if (filterCategory !== 'all') {
-            filteredPhotos = photosData.filter(photo => photo.category === filterCategory);
-        }
-
-        allPhotos = filteredPhotos; // aca clabo el array para el modal
-        
-        filteredPhotos.forEach((photo, index) => {
-            const photoItem = document.createElement('div');
-            photoItem.classList.add('photo-item');
-            photoItem.setAttribute('data-category', photo.category);
-            photoItem.setAttribute('data-index', index); 
-
-            photoItem.innerHTML = `
-                <img src="${photo.src}" alt="${photo.alt}" loading="lazy">
-                <div class="photo-item-info">
-                    <h4>${photo.title}</h4>
-                    <p>${photo.description}</p>
-                </div>
-            `;
-            photoGallery.appendChild(photoItem);
-        });
-    };
-
-    loadPhotos();
-
-    // filtro de categorias
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-            loadPhotos(button.dataset.category);
-        });
-    });
-
-    // El Modal para ver imagen grande
-    const imageModal = document.createElement('div');
-    imageModal.classList.add('image-modal');
-    imageModal.innerHTML = `
-        <span class="image-modal-close">&times;</span>
-        <div class="image-modal-content">
-            <img src="" alt="" id="modal-image">
-            <a class="prev-arrow">&#10094;</a>
-            <a class="next-arrow">&#10095;</a>
-        </div>
-    `;
-    document.body.appendChild(imageModal);
-
-    const modalImage = document.getElementById('modal-image');
-    const modalCloseBtn = document.querySelector('.image-modal-close');
-    const prevArrow = document.querySelector('.prev-arrow');
-    const nextArrow = document.querySelector('.next-arrow');
-    let currentPhotoIndex = 0;
-
-    photoGallery.addEventListener('click', (e) => {
-        const photoItem = e.target.closest('.photo-item');
-        if (photoItem) {
-            currentPhotoIndex = parseInt(photoItem.getAttribute('data-index'));
-            modalImage.src = allPhotos[currentPhotoIndex].src;
-            imageModal.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
-    });
-
-    modalCloseBtn.addEventListener('click', () => {
-        imageModal.style.display = 'none';
-        document.body.style.overflow = ''; 
-    });
-
-    
-    prevArrow.addEventListener('click', () => {
-        currentPhotoIndex = (currentPhotoIndex - 1 + allPhotos.length) % allPhotos.length;
-        modalImage.src = allPhotos[currentPhotoIndex].src;
-    });
-
-    nextArrow.addEventListener('click', () => {
-        currentPhotoIndex = (currentPhotoIndex + 1) % allPhotos.length;
-        modalImage.src = allPhotos[currentPhotoIndex].src;
-    });
-
-    imageModal.addEventListener('click', (e) => {
-        if (e.target === imageModal) {
-            imageModal.style.display = 'none';
-            document.body.style.overflow = '';
-        }
-    });
-});
