@@ -406,7 +406,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'El Eco Interior',
             description: 'Una cabeza vista de perfil, con la luz revelando las estructuras internas o los pensamientos que resuenan. '
         },      {
-            src: 'galeria/Luz-UV/3 (15).jpg', 
+            src: 'galeria/Luz-UV/3-15.jpg.jpg', 
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
             category: 'luz-uv',
             title: 'Inmersión Violeta',
