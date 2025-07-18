@@ -320,7 +320,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Un lago de aguas cristalinas y un color turquesa vibrante reflejando el cielo y las montañas.'
         },
 
-        // --- CATEGORÍA: LUZ UV ---
+       
             {
             src: 'Luz UV/3 (1).jpg', 
             alt: 'Retrato de un rostro iluminado con luz ultravioleta',
